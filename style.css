@@ -1,0 +1,89 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #393a39;
+    letter-spacing: 0.5px;
+}
+
+.container,
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.contact > p, 
+.contact a{
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.contact a:hover,
+.contact p:hover{
+    text-decoration: underline;
+    color: #eed1d1;
+}
+
+.about-me{
+    background-color: #fa7575;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-me .about-me-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #eed1d1;
+}
+
+.about-me .name{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.about-me .role{
+    font-size: 1.5em;
+    padding: 5px 0;
+}
+
+.about-me .short-note{
+    padding: 10px 250px;
+    font-size: 16px;
+}
+
+.about-me a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #911010;
+    color: #eed1d1;
+    border-radius: 4px;
+    transition: all .2s;
+}
+
+.about-me a:hover{
+    transform: scale(1.05);
+    padding: 5 15px;
+}
