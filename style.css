@@ -14,8 +14,19 @@ body{
     letter-spacing: 0.5px;
 }
 
+.fixed{
+    position: fixed;
+}
+
+
+
+.hidden{
+    visibility: hidden;
+}
+
 .container,
-.about-me{
+.logo,
+.display{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -26,8 +37,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
+    /* background-color: #eed1d1; */
 }
 
+.about-me .read-more,
+.logo p,
 .contact > p, 
 .contact a{
     padding: 15px;
@@ -35,16 +49,20 @@ body{
     cursor: pointer;
     text-decoration: none;
     transition: all 0.2s;
+    color: #393a39;
 }
 
+.about-me .read-more{
+    color: #911010;
+}
 .contact a:hover,
 .contact p:hover{
     text-decoration: underline;
-    color: #eed1d1;
+    color: #911010;
 }
 
 .about-me{
-    background-color: #fa7575;
+    background-color: #fab2b2;
     padding: 20px;
     flex-direction: column;
     text-align: center;
@@ -54,7 +72,10 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #eed1d1;
+    background-image: url(./img/me_vneck.jpg);
+    background-size: cover;
+    border: 2px solid #eed1d1;
+    box-shadow: 3px  4px 4px 1px #393a39;
 }
 
 .about-me .name{
@@ -68,13 +89,14 @@ body{
 }
 
 .about-me .short-note{
-    padding: 10px 250px;
-    font-size: 16px;
+    padding: 20px 150px;
+    font-size: 17px;
+    line-height: 27px;
 }
 
-.about-me a{
+.about-me .btn{
     display: inline-block;
-    padding: 5px;
+    padding: 10px 15px;
     text-decoration: none;
     font-weight: bold;
     background-color: #911010;
@@ -83,7 +105,22 @@ body{
     transition: all .2s;
 }
 
-.about-me a:hover{
+.about-me .btn:hover{
     transform: scale(1.05);
     padding: 5 15px;
+}
+.blur{
+    filter: blur(20px);
+}
+.show{
+    background-color: #911010;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    margin-top: 0;
 }
